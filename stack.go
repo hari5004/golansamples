@@ -25,13 +25,14 @@ func insertnode(p *node){
 }
 }
 func printnode() {
-	fmt.Println(first.num)
-	fmt.Println(first.next.num)
+	for i:=first ;i!=nil;i=i.next {
+		fmt.Println(i.num)
+}
 }
 func main() {
-createnode(1)
-//fmt.Println(first.num)
-createnode(2)
+for i:=0;i<10;i++ {
+	createnode(i)
+}
 printnode()
 }
 
